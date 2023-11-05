@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+#__next,
+#root,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.scrolling {
+  scrollbar-width: thin;
+}
+
+.scrolling::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+.scrolling::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: 2px solid #2b2d31;
+  border-radius: 100px;
+}
+
+.troncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

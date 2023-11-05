@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import s from "./Notification.module.scss";
 
 const Notification = ({ title, content, onClose }) => {
   useEffect(() => {
@@ -9,8 +8,8 @@ const Notification = ({ title, content, onClose }) => {
   }, []);
 
   return (
-    <div className={s.notification}>
-      <div className={s.close} onClick={onClose}></div>
+    <div className="">
+      <div className="" onClick={onClose}></div>
       <strong>{title}</strong>
       <p>{content}</p>
     </div>
